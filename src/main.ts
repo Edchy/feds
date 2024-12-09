@@ -13,7 +13,7 @@ darkTheme?.addEventListener("click", () => {
 
 const jsConfetti = new JSConfetti();
 
-document.querySelector("skull-btn")?.addEventListener("click", () =>
+document.querySelector(".skull-btn")?.addEventListener("click", () =>
   jsConfetti.addConfetti({
     emojis: ["☠️"],
     confettiRadius: 6,
