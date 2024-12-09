@@ -1,6 +1,11 @@
-document.querySelector("button")?.addEventListener("click", () => alert("YO"));
+import JSConfetti from "js-confetti";
 
+const jsConfetti = new JSConfetti();
 
-document.getElementById('fyrkant')?.addEventListener("click",()=>{
-    
-});
+document.querySelector("button")?.addEventListener("click", () =>
+  jsConfetti.addConfetti({
+    emojis: ["☠️"],
+    confettiRadius: 6,
+    confettiNumber: 500,
+  })
+);
