@@ -7,6 +7,11 @@ body {
   color: CanvasText;
 }
 
+.wrapper {
+  width: min(800px, 100% - 1rem);
+  margin-inline: auto;
+}
+
 #fyrkant {
   border: solid red 2px;
   width: 50px;
