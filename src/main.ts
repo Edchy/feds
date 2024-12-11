@@ -1,27 +1,25 @@
 import JSConfetti from "js-confetti";
-import { todos } from "./todo";
+import { todos, createTodoItem } from "./todo";
 
 const html = document.documentElement;
 const lightTheme = document.querySelector(".theme-light");
 const darkTheme = document.querySelector(".theme-dark");
-const todosList = document.querySelector(".todos-list");
+export const todosList = document.querySelector(".todos-list");
 const todosForm = document.querySelector(".todos-form") as HTMLFormElement;
 
 todosForm?.addEventListener("submit", (e) => {
   e.preventDefault();
-  let newLi = document.createElement("li");
   const input = todosForm.querySelector("input");
-  if (input) {
-    newLi.textContent = input.value;
+  if (input && input.value.length > 0) {
+    createTodoItem(input.value);
+    todos.push(input.value);
+    console.log(todos);
   }
-  todosList?.append(newLi);
   todosForm.reset();
 });
 
 todos.forEach((todo) => {
-  let li = document.createElement("li");
-  li.textContent = todo;
-  todosList?.append(li);
+  createTodoItem(todo);
 });
 
 lightTheme?.addEventListener("click", () => {
