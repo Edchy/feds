@@ -19,8 +19,8 @@ h1 {
 }
 
 .info-section {
-  background-color: red;
-  padding: .25rem;
+  background-color: rgb(186, 173, 142);
+  padding-inline: .125rem;
 }
 
 .flex-center {
