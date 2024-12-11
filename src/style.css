@@ -18,6 +18,11 @@ h1 {
   margin-inline: auto;
 }
 
+.info-section {
+  background-color: red;
+  padding: .25rem;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
