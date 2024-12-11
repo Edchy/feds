@@ -104,6 +104,31 @@ button:focus-visible {
     cursor: pointer;
   }
 }
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hidden {
+  background-color: white;
+}
+
+.revealed .emoji {
+  visibility: visible;
+}
+
+.emoji {
+  visibility: hidden;
+}
+
+
 
 
 footer {
