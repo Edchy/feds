@@ -67,7 +67,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: light-dark(white, black);
+  background-color: light-dark(white, #646cff);
   cursor: pointer;
   transition: border-color 0.25s;
   color: light-dark(black, white);
