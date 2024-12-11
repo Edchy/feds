@@ -49,3 +49,10 @@ document.getElementById("press")?.addEventListener("click", () => {
     fyrkantDiv.textContent = emoji[currentEmojiIndex];
   }
 });
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('revealed');
+  });
+});
