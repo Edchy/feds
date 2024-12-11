@@ -12,6 +12,27 @@ body {
   margin-inline: auto;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  menu {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin-left: 1rem;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: CanvasText;
+      }
+    }
+  }
+}
+
 #fyrkant {
   border: solid red 2px;
   width: 50px;
@@ -50,9 +71,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-
-button {
-  background-color: #f9f9f9;
 }
