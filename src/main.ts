@@ -49,3 +49,4 @@ document.getElementById("press")?.addEventListener("click", () => {
     fyrkantDiv.textContent = emoji[currentEmojiIndex];
   }
 });
+
