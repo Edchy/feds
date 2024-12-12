@@ -26,6 +26,9 @@
           <button class="theme-dark">dark</button>
         </menu>
       </header>
+      <section class="info-section">
+        <p>important information</p>
+      </section>
       <main>
         <h1>Avatar</h1>
         <button class="skull-btn">☠️</button>
@@ -39,6 +42,16 @@
         <button id="press">Switch Animal</button>
         <div id="fyrkant"></div>
       </main>
+      <section class="companies-section">
+        <h3>some companies</h3>
+        <div>
+          <img src="./src/assets/bluesky.svg" alt="" />
+          <img src="./src/assets/prettier-icon-dark.svg" alt="" />
+          <img src="./src/assets/astro.svg" alt="" />
+          <img src="./src/assets/nextjs_icon_dark.svg" alt="" />
+          <img src="./src/assets/nodejs.svg" alt="" />
+        </div>
+      </section>
       <aside>
         <div class="todos-container">
           <h2>todos</h2>
@@ -48,38 +61,56 @@
             <button>add</button>
           </form>
         </div>
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments-list" class="comments-list">
+            <li><a href="">Det ser så gott ut</a></li>
+            <li><a href=""> Vart kan jag hitta recptet</a></li>
+            <li><a href=""> Hur många dl mjöl var det, såg inte det.</a></li>
+          </ul>
+          <div class="comment-form">
+            <input
+              type="text"
+              id="comment-input"
+              placeholder="Type your comment..."
+            />
+            <button id="comment-submit" onclick="submitComment()">
+              Submit
+            </button>
+          </div>
+        </div>
         <div id="card-container">
-        <div class="card hidden" data-id="0">
-          <span class="emoji">🐶</span>
+          <div class="card hidden" data-id="0">
+            <span class="emoji">🐶</span>
+          </div>
+          <div class="card hidden" data-id="1">
+            <span class="emoji">🐱</span>
+          </div>
+          <div class="card hidden" data-id="2">
+            <span class="emoji">🦊</span>
+          </div>
+          <div class="card hidden" data-id="3">
+            <span class="emoji">🐼</span>
+          </div>
+          <div class="card hidden" data-id="4">
+            <span class="emoji">🦁</span>
+          </div>
+          <div class="card hidden" data-id="5">
+            <span class="emoji">🐶</span>
+          </div>
+          <div class="card hidden" data-id="6">
+            <span class="emoji">🐱</span>
+          </div>
+          <div class="card hidden" data-id="7">
+            <span class="emoji">🦊</span>
+          </div>
+          <div class="card hidden" data-id="8">
+            <span class="emoji">🐼</span>
+          </div>
+          <div class="card hidden" data-id="9">
+            <span class="emoji">🦁</span>
+          </div>
         </div>
-        <div class="card hidden" data-id="1">
-          <span class="emoji">🐱</span>
-        </div>
-        <div class="card hidden" data-id="2">
-          <span class="emoji">🦊</span>
-        </div>
-        <div class="card hidden" data-id="3">
-          <span class="emoji">🐼</span>
-        </div>
-        <div class="card hidden" data-id="4">
-          <span class="emoji">🦁</span>
-        </div>
-        <div class="card hidden" data-id="5">
-          <span class="emoji">🐶</span>
-        </div>
-        <div class="card hidden" data-id="6">
-          <span class="emoji">🐱</span>
-        </div>
-        <div class="card hidden" data-id="7">
-          <span class="emoji">🦊</span>
-        </div>
-        <div class="card hidden" data-id="8">
-          <span class="emoji">🐼</span>
-        </div>
-        <div class="card hidden" data-id="9">
-          <span class="emoji">🦁</span>
-        </div>
-      </div>
       </aside>
       <footer><h3>Avatar</h3></footer>
     </body>
